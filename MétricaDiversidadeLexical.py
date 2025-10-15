@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# calcula_ttr_redacoes.py
-
 import os
 import json
 import re
@@ -37,13 +34,13 @@ for arquivo in sorted(os.listdir(FOLDER), key=numero_inicio):
         with open(caminho, "r", encoding="utf-8") as f:
             data = json.load(f)
     except Exception:
-        continue  # ignora arquivos inválidos
+        continue  # ignora os arquivos inválidos
 
     redacao = data.get("redacao")
     if not redacao:
         continue
 
-    # Junta frases em ordem numérica
+    # Junta as frases em ordem numérica
     if isinstance(redacao, dict):
         try:
             texto_redacao = " ".join([redacao[k] for k in sorted(redacao.keys(), key=int)])
@@ -58,7 +55,7 @@ for arquivo in sorted(os.listdir(FOLDER), key=numero_inicio):
     resultados.append({"arquivo": arquivo, "ttr_redacao": round(ttr, 3)})
     ttrs.append(ttr)
 
-# Exibe resultados
+# Exibe os resultados
 for r in resultados:
     print(f"✅ {r['arquivo']}: TTR = {r['ttr_redacao']}")
 
@@ -67,3 +64,4 @@ if ttrs:
     print(f"\n📈 Média de TTR das redações: {mean(ttrs):.3f}")
 else:
     print("\nNenhuma redação válida encontrada.")
+
