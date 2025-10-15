@@ -2,7 +2,10 @@ TTR (Type-Token Ratio) é uma medida de diversidade lexical que mostra o quanto 
 Ele é a razão entre tipos (palavras diferentes no texto) e tokens (total de palavras do texto). Ou seja, significa que:
 TTR alto → vocabulário variado, pouca repetição.
 TTR baixo → vocabulário repetitivo ou texto longo.
+O TTR varia de 0 a 1, sendo 0 total repetição e 1 diversidade lexical total, ou seja, nenhum token no texto se repete
+
 Embaixo temos os resultados do TTR de cada arquivo do dataset Qwen3-Max e a média geral:
+
 1_a-aids-e-seu-contagio_saida.json: TTR = 0.659
 2_a-aids-estaria-sendo-esquecida_saida.json: TTR = 0.875
 3_a-vida-nao-pode-parar_saida.json: TTR = 0.576
