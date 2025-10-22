@@ -1,1 +1,10 @@
-Média de TTR das redações : 0.613
+
+ESTATÍSTICAS – Dataset Data
+Média do TTR:   0.5726
+Desvio padrão:  0.0966
+
+ESTATÍSTICAS – Dataset QwenMax
+Média do TTR:   0.7948
+Desvio padrão:  0.0597
+
+  #Desvio padrão é o quanto cada comando temático se distancia da média. Ex: Se um comando temático tiver ttr de 1 e o outro de 0, a média será 0.5, porém os dois valores estão muito longe um do outro, fazendo com que fiquem longe da média também
